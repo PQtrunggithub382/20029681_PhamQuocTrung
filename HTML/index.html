@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/index.js"></script>
+    <style>
+        .btn1 {
+            border: none;
+            padding: 6px 12px;
+        }
+
+        img {
+            height: 139px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 bg-info ">
+                <img src="../IMG/LOGO.PNG" alt="" srcset="">
+            </div>
+            <div class="col-md-10 text-center bg-info">
+                <h3 style="color:rgb(29, 114, 206); font-weight: bold;;">Bộ CôNG THƯƠNG</h3>
+                <h2 style="color:rgb(29, 114, 206); font-weight: bold;">TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH
+                </h2>
+                <h4 class="text-danger">Đổi mới nâng tầm cao mới, năng động hội nhập toàn cầu</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+                    <ul class="navbar nav" style="float: left;">
+                        <button class="btn bg-info" data-toggle="modal" data-target="#myModal">Đăng ký</button>
+                        <button class="btn  bg-info" data-toggle="modal" data-target="myModal">Đăng Nhập</button>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <h1 style="text-align:center">DANH SÁCH ĐĂNG KÝ LÀM CĂN CƯỚC SINH VIÊN</h1>
+            <h1 style="text-align:center">TRƯỜNG DHCN THÀNH PHỐ HỒ CHÍ MINH</h1>
+            <table class="table table-striped" role="table" id="danhSach">
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th>SCMND cũ</th>
+                    <th>Quê quán</th>
+                    <th>Email</th>
+                    <th>Điện thoại</th>
+                    <th>Ảnh đại diện</th>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="col-xs-12">
+                <p style="text-align: center;"> SVTH.....Mã Sinh viên:.......................... Lớp:</p>
+            </div>
+        </footer>
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-center">THÔNG TIN CÁ NHÂN</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form-horizontal" style="margin-top:10px;"></form>
+                        <lable for="Name" class="control-label col-xs-3">Họ tên</lable>
+                        <div class="col-xs-9">
+                            <input type="text" id="Name" class="form-control">
+                            <span class-="text-danger" id="tbName">*</span>
+                        </div>
+                        <lable for="CMND" class="control-label col-xs-3">Số CMND cũ</lable>
+                        <div class="col-xs-9" style="margin-bottom:10px;">
+                            <input type="text" id="CMND" class="form-control">
+                            <span class="text-danger" id="tbCMND" style="color:red;">*</span>
+                        </div>
+                        <lable for="DC" class="control-label col-xs-3">Quê Quán</lable>
+                        <div class="col-xs-9">
+                            <input type="text" id="DC" class="form-control">
+                            <span class="text-danger" id="tbDC" style="color:red;">*</span>
+                        </div>
+                        <lable for="Email" class="control-label col-xs-3">Email</lable>
+                        <div class="col-xs-9">
+                            <input type="email" id="Email" class="form-control">
+                            <span class="text-danger" id="tbEmail" style="color:red;">*</span>
+                        </div>
+                        <lable for="Ao" class="control-label col-xs-3">Số Đện thoại</lable>
+                        <div class="col-xs-9">
+                            <input type="text" id="SDT" class="form-control">
+                            <span class="text-danger" id="tbSDT" style="color:red;">*</span>
+                        </div>
+                        <lable for="ADD" class="control-label col-xs-3">Ảnh đại diện</lable>
+                        <div class="col-xs-9">
+                            <input type="file" id="ADD" class="form-control">
+                            <span class="text-danger" id="tbADD" style="color:red;">*</span>
+                        </div>
+                        <button class="btn btn-sucess btn-group-justified" id="Save" type="button"
+                            style="color: white; background-color:green; width:100%;">
+                            Lưu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
